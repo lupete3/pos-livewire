@@ -10,8 +10,6 @@ Route::get('/', function () {
     return redirect()->route('login');
 });
 
-
-
 Route::middleware('auth')->group(function () {
     Route::get('/home', Home::class)->name('home');
 
